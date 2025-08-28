@@ -1,3 +1,4 @@
+import kotlin.math.sqrt
 fun main() {
     val numbers = listOf(1, 2, 4, 7, 13, 9, 23)
 
@@ -12,5 +13,9 @@ fun main() {
 TODO: Function that checks if a number is prime
  */
 fun isPrime(n: Int): Boolean {
-    return true;
+    if (n < 2) return false
+    for (i in 2..sqrt(n.toDouble()).toInt()) {
+        if (n % i == 0) return false
+    }
+    return true
 }
