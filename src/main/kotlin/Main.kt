@@ -6,7 +6,7 @@ fun main() {
     val result = numbers.map { isPrime(it) }
 
     println("Numbers: $numbers")
-    println("Are they prime?: $result")
+    println("Are they prime? : $result")
 }
 
 /*
